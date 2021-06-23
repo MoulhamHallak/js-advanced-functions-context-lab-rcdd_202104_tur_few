@@ -68,13 +68,13 @@ function wagesEarnedOnDate(date){
     return hoursWorkedOnDate.call(this, date) * this.payPerHour
 }
 
+function findEmployeeByFirstName(srcArray, firstName){
+    return srcArray.find(record => record.firstName === firstName)
+}
+
 function calculatePayroll(array){
     let payroll = array.reduce((acc, curr) => {
         return acc + allWagesFor.call(curr)
     }, 0)
     return payroll
-}
-
-function findEmployeeByFirstName(srcArray, firstName){
-    return srcArray.find(record => record.firstName === firstName)
 }
