@@ -38,12 +38,12 @@ function createEmployeeRecords(array){
 
 function createTimeInEvent(date){
     let dateArr = date.split(" ")
-    let e = {
+    let object = {
         type: "TimeIn",
         hour: parseInt(dateArr[1]),
         date: dateArr[0]
     }
-    this.timeInEvents.push(e)
+    this.timeInEvents.push(object)
     return this
 }
 
