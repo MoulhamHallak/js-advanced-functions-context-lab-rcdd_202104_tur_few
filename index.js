@@ -75,6 +75,6 @@ function calculatePayroll(array){
     return payroll
 }
 
-function findEmployeeByFirstName(srcArray, name){
+function findEmployeeByFirstName(srcArray, firstName){
     return srcArray.find(record => record.firstName === name)
 }
