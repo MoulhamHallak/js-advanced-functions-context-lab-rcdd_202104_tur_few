@@ -33,7 +33,7 @@ function createEmployeeRecord(array){
 }
 
 function createEmployeeRecords(array){
-    return array.map(empArray => createEmployeeRecord(empArray))
+    return array.map(employeeArray => createEmployeeRecord(employeeArray))
 }
 
 function createTimeInEvent(date){
