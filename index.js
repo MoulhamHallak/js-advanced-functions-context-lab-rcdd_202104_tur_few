@@ -69,8 +69,8 @@ function wagesEarnedOnDate(date){
 }
 
 function calculatePayroll(array){
-    let payroll = array.reduce((memo, record) => {
-        return memo + allWagesFor.call(record)
+    let payroll = array.reduce((acc, curr) => {
+        return acc + allWagesFor.call(curr)
     }, 0)
     return payroll
 }
